@@ -36,7 +36,7 @@ import streamlit as st
 # Raad csv for deployment & Set Page configration
 df_new = pd.read_csv("new_df.csv").drop('Unnamed: 0',axis=1).sort_values(by=['date' , 'store'], ascending=True).reset_index(drop=True)
 st.set_page_config(page_title='Walmart Predection Project' , layout = 'wide' , page_icon = '📊')
-st.title('📊 Walmart Sales Predection Project 🎯')
+st.title('📊 Walmart Sales Prediction Project 🎯')
 
 Brief = st.sidebar.checkbox(":blue[Brief About Data]")
 Planning = st.sidebar.checkbox(":orange[About Project]")
